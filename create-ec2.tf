@@ -4,10 +4,10 @@ module "ec2_instance" {
   name = "single-instance"
 
   instance_type          = "t2.micro"
-  key_name               = "user1"
+  key_name               = "tcs-user"
   monitoring             = true
-  vpc_security_group_ids = ["sg-12345678"]
-  subnet_id              = "subnet-eddcdzz4"
+  vpc_security_group_ids = ["tcs-sg"]
+  subnet_id              = "tcs-subnet"
 
   tags = {
     Terraform   = "true"
